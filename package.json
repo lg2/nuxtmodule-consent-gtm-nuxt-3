@@ -1,5 +1,5 @@
 {
-  "name": "nuxtmodule-consent-gtm-nuxt3",
+  "name": "@lg2/nuxtmodule-consent-gtm-nuxt3",
   "version": "0.0.1",
   "description": "consent gtm nuxt3 module",
   "main": "index.js",
