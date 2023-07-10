@@ -1,6 +1,6 @@
 {
-  "name": "@lg2/nuxtmodule-consent-gtm-nuxt3",
-  "version": "0.0.1",
+  "name": "@lg2/nuxtmodule-consent-gtm-nuxt-3",
+  "version": "0.0.2",
   "description": "consent gtm nuxt3 module",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/lg2/nuxtmodule-consent-gtm-nuxt3.git"
+    "url": "git+ssh://git@github.com/lg2/nuxtmodule-consent-gtm-nuxt-3.git"
   },
   "author": "romain avalle",
   "license": "ISC",
-  "homepage": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt3#readme",
+  "homepage": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt-3#readme",
   "bugs": {
-    "url": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt3/issues"
+    "url": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt-3/issues"
   },
   "keywords": [
     "nuxt",
