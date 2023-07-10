@@ -1,14 +1,14 @@
 {
   "name": "nuxtmodule-consent-gtm-nuxt3",
   "version": "0.0.1",
-  "description": "consent gtm nuxt module",
+  "description": "consent gtm nuxt3 module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:lg2/nuxtmodule-consent-gtm-nuxt3.git"
+    "url": "git+ssh://git@github.com/lg2/nuxtmodule-consent-gtm-nuxt3.git"
   },
   "author": "romain avalle",
   "license": "ISC",
