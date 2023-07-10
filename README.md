@@ -1,4 +1,4 @@
-#nuxtmodule-consent-gtm-nuxt3
+#@lg2/nuxtmodule-consent-gtm-nuxt3
 
 to be placed before gtm module
 
