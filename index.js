@@ -1,7 +1,7 @@
 import { defineNuxtModule } from '@nuxt/kit'
 function  addConsent(options) {
   const scripts = options.head?.script || [];
-  scripts.push({
+  scripts.unshift({
     hid: options.scriptId,
     innerHTML: `
       window.dataLayer = window.dataLayer || [];
