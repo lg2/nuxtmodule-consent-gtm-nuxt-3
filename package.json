@@ -1,6 +1,6 @@
 {
   "name": "@lg2/nuxtmodule-consent-gtm-nuxt-3",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "consent gtm nuxt3 module",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "author": "romain avalle",
   "license": "ISC",
-  "homepage": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt-3#readme",
+  "homepage": "https://github.com/lg2/nuxtmodule-consent-gtm-nuxt-3#readme",
   "bugs": {
     "url": "https://github.com:lg2/nuxtmodule-consent-gtm-nuxt-3/issues"
   },
