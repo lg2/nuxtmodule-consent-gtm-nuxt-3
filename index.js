@@ -1,5 +1,5 @@
-import { defineNuxtModule } from '@nuxt/kit'
-function  addConsent(options) {
+import { defineNuxtModule } from "@nuxt/kit";
+function addConsent(options) {
   const scripts = options.head?.script || [];
   scripts.unshift({
     hid: options.scriptId,
@@ -11,12 +11,16 @@ function  addConsent(options) {
           if (localStorage.getItem('${options.localStorageItem}') === null) {
           gtag('consent', 'default', {
             'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
             'analytics_storage': 'denied'
           });
         }else{
             var consent = JSON.parse(localStorage.getItem('${options.localStorageItem}'))
             var consentMode = {
               ad_storage: consent.ad_storage ? 'granted' : 'denied',
+              ad_user_data: consent.ad_storage ? 'granted' : 'denied',
+              ad_personalization: consent.ad_storage ? 'granted' : 'denied',
               analytics_storage: consent.analytics_storage ? 'granted' : 'denied',
               functionality_storage: consent.functionality_storage
                 ? 'granted'
@@ -38,16 +42,15 @@ function  addConsent(options) {
   ];
 }
 export default defineNuxtModule({
-  setup (options, nuxt) {
+  setup(options, nuxt) {
+    const opts = {
+      ...nuxt.options.app,
 
-   const opts = {
-    localStorageItem:
-    nuxt.options.consentGTM?.localStorageItem || "storedConsentLocale",
-    ...nuxt.options.app,
-    scriptId: "consent-script",
-  };
-  nuxt.options.runtimeConfig.public.consent = opts.localStorageItem;
-  !process.client && addConsent(opts);
-  }
-})
-
+      localStorageItem: "storedConsentLocale",
+      scriptId: "consent-script",
+      ...(nuxt.options.consentGTM ? { ...nuxt.options.consentGTM } : {}),
+    };
+    nuxt.options.runtimeConfig.public.consent = opts.localStorageItem;
+    !process.client && addConsent(opts);
+  },
+});
